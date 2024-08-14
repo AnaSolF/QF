@@ -18,7 +18,7 @@
         <Label Text="Correo"/>
         <Entry Text="{Binding ParticipanteDto.Correo}" Margin="0,0,0,10"/>
 
-        <Label Text="Fecha Contrato"/>
+        <Label Text="Fecha de Inscripción"/>
         <DatePicker Date="{Binding ParticipanteDto.FechaInscripcion}" Margin="0,0,0,10"/>
          <!--Funciòn Guardar del viewModel-->
         <Button Text="Guardar" Command="{Binding GuardarCommand}" BackgroundColor="Green"/>
