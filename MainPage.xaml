@@ -37,7 +37,7 @@
                                 <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="End"
                                     Text="{Binding Correo}" />
                                 <Label Grid.Row="3" Grid.Column="0"
-                                    Text="FechaInscripción:" FontAttributes="Bold"/>
+                                    Text="Fecha de inscripción:" FontAttributes="Bold"/>
                                 <Label Grid.Row="3" Grid.Column="1" HorizontalOptions="End"
                                     Text="{Binding FechaInscripcion, StringFormat='{0:dd/MM/yyyy}'}" />
 
