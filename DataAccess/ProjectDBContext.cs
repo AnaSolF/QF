@@ -7,7 +7,7 @@ namespace QF.DataAccess
 { //Hacemos public y hacemos que herede de DBContext
     public class ProjectDBContext : DbContext
     {
-        //Tablas de la base de datos(Nombre del modelo(<Empleado>) y nombre de la tabla (Empleados)
+        //Tablas de la base de datos(Nombre del modelo(<Participante>) y nombre de la tabla (Participantes)
         public DbSet<Participante>Participantes { get; set; }
 
         //Sobreescribimos método OnConfiguring para crear la cadena de conexión
@@ -19,7 +19,7 @@ namespace QF.DataAccess
             optionsBuilder.UseSqlite(conexionDB);
         }
 
-        //Creamos la tabla(Entity Participante, primary key IdParticipante
+        //Creamos la tabla(Entity Participante, primary key IdParticipante)
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Participante>(entity =>
