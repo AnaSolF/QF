@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QF.Views.ParticipantePage"
+             Title="{Binding TituloPagina}">
+    <VerticalStackLayout Padding="15">
+        
+     <!--Loading: Aparece al guardar o editar-->
+        <ActivityIndicator IsVisible="{Binding LoadingEsVisible}"
+         IsRunning="{Binding LoadingEsVisible}"  
+         Color="Blue"
+         HeightRequest="30"
+        />
+
+        <Label Text="Nombre"/>
+        <Entry Text="{Binding ParticipanteDto.Nombre}" Margin="0,0,0,10"/>
+
+        <Label Text="Correo"/>
+        <Entry Text="{Binding ParticipanteDto.Correo}" Margin="0,0,0,10"/>
+
+        <Label Text="Fecha Contrato"/>
+        <DatePicker Date="{Binding ParticipanteDto.FechaInscripcion}" Margin="0,0,0,10"/>
+         <!--Funciòn Guardar del viewModel-->
+        <Button Text="Guardar" Command="{Binding GuardarCommand}" BackgroundColor="Green"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
